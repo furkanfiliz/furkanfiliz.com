@@ -1,0 +1,65 @@
+:root {
+  --color-Background: #e8e0fd;
+  --color-text: #111;
+}
+
+.main {
+  background: #eee;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .information {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 11px #ddd;
+
+    .image {
+      display: flex;
+      justify-content: center;
+
+      img {
+        border-radius: 50px;
+      }
+    }
+
+    .title {
+      display: flex;
+      flex-direction: column;
+
+      margin: 15px 0;
+      font-weight: 600;
+
+      span {
+        &:first-child {
+          font-size: 18px;
+          margin-bottom: 15px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .social {
+      margin-top: 15px;
+
+      a {
+        img {
+          width: 32px;
+          height: 32px;
+          margin-right: 9px;
+        }
+
+        &:last-child {
+          img {
+            margin-right: 0;
+          }
+        }
+      }
+
+
+    }
+  }
+}
